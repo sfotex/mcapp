@@ -11,5 +11,4 @@ outputs:
   - name: build-output
 
 run:
-  path: bash
-  args: ["spring-boot-concourse/concourse/tasks/build.sh"]
+  path: "spring-boot-concourse/concourse/tasks/build.sh"
