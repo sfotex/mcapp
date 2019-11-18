@@ -12,4 +12,4 @@ outputs:
 
 run:
   path: bash
-  args: [spring-boot-concourse/concourse/tasks/build.sh]
+  args: ["spring-boot-concourse/concourse/tasks/build.sh"]
