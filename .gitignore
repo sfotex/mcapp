@@ -1,0 +1,17 @@
+/.gradle
+/build
+/*.iml
+/*.ipr
+/*.idea
+/*.iws
+/out
+/project.properties
+tmlog.lck
+/dataSources
+/.ideaDataSources
+EbrDataModel.json
+/*.log
+*.iml
+
+sh.exe.stackdump
+.shelf
