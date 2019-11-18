@@ -10,5 +10,8 @@ inputs:
 outputs:
   - name: build-output
 
+before_install:
+  - chmod +x spring-boot-concourse/concourse/tasks/build.sh"\
+
 run:
   path: "spring-boot-concourse/concourse/tasks/build.sh"
