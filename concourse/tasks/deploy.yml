@@ -1,7 +1,7 @@
 ---
 platform: linux
 
-image_resource:
+- name: hello-world-docker-image
   type: docker-image
   source:
     repository: host.docker.internal:5000/my-spring
@@ -9,6 +9,9 @@ image_resource:
 
 inputs:
   - name: build-output
+
+outputs:
+  - name: hello-world-docker-image
 
 run:
   path: ls
