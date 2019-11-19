@@ -3,7 +3,8 @@ platform: linux
 
 image_resource:
   type: docker-image
-  repository: fingerm19:5000/spring-boot-concourse
+  source:
+    repository: fingerm19:5000/spring-boot-concourse
 
 inputs:
   - name: build-output
