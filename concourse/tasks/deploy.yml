@@ -3,7 +3,7 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: busybox}
+  repository: fingerm19:5000/spring-boot-concourse
 
 inputs:
   - name: build-output
