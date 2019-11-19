@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
-mcapp/gradlew --build-file spring-boot-concourse/build.gradle build
+mcapp/gradlew --build-file mcapp/build.gradle build
 copy mcapp/build/libs/*.jar build-output/
