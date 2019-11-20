@@ -9,4 +9,4 @@ inputs:
   - name: build-output
 
 run:
-  path: "spring-boot-concourse/gradlew build docker "
+  path: "spring-boot-concourse/gradlew build docker"
