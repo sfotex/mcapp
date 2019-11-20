@@ -23,4 +23,4 @@ jobs:
     file: spring-boot-concourse/concourse/tasks/deploy.yml
   - put: my-docker-image
     params:
-      build: ./spring-boot-concourse
+      build: ./spring-boot-concourse/
