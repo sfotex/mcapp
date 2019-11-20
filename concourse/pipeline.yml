@@ -4,7 +4,12 @@ resources:
     check_every: 10s
     source:
       uri: https://github.com/sfotex/mcapp.git
-      branch: master
+      branch: master   
+  - name: my-docker-image
+    type: docker-image
+    source:
+      repository: host.docker.internal:5000/my-spring
+      insecure_registries: ["http://host.docker.internal:5000"]
 
 jobs:
 - name: build

@@ -1,17 +1,15 @@
 ---
 platform: linux
 
-- name: hello-world-docker-image
+image_resource:
   type: docker-image
-  source:
-    repository: host.docker.internal:5000/my-spring
-    insecure_registries: ["http://host.docker.internal:5000"]
+  source: {repository: busybox}
 
 inputs:
   - name: build-output
 
 outputs:
-  - name: hello-world-docker-image
+  - name: my-docker-image
 
 run:
   path: ls
