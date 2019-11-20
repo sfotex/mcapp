@@ -1,18 +1,12 @@
 ---
 platform: linux
 
-resources:
-  - name: my-docker-image
-    type: docker-image
-    source:
-      repository: host.docker.internal:5000/my-spring
-      insecure_registries: ["http://host.docker.internal:5000"]
+image_resource:
+  type: docker-image
+  source: {repository: busybox}
 
 inputs:
   - name: build-output
-
-outputs:
-  - name: my-docker-image
 
 run:
   path: ls
