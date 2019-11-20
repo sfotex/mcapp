@@ -10,7 +10,6 @@ inputs:
 
 run:
   path: "spring-boot-concourse"
-  g
   args:
   - -c
   - gradlew build docker
