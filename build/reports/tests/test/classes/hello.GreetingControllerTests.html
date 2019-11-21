@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.347s</div>
+<div class="counter">0.379s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">noParamGreetingShouldReturnDefaultMessage</td>
-<td>0.341s</td>
+<td class="success">0.372s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">paramGreetingShouldReturnTailoredMessage</td>
-<td>0.006s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,31 +92,31 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>20:59:31.430 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class hello.GreetingControllerTests]
-20:59:31.435 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-20:59:31.443 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-20:59:31.466 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [hello.GreetingControllerTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-20:59:31.477 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.GreetingControllerTests], using SpringBootContextLoader
-20:59:31.480 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.GreetingControllerTests]: class path resource [hello/GreetingControllerTests-context.xml] does not exist
-20:59:31.481 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.GreetingControllerTests]: class path resource [hello/GreetingControllerTestsContext.groovy] does not exist
-20:59:31.481 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [hello.GreetingControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-20:59:31.481 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [hello.GreetingControllerTests]: GreetingControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:59:31.529 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [hello.GreetingControllerTests]
-20:59:31.587 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\workspace\mcapp\build\classes\java\main\hello\Application.class]
-20:59:31.595 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration hello.Application for test class hello.GreetingControllerTests
-20:59:31.695 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [hello.GreetingControllerTests]: using defaults.
-20:59:31.695 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-20:59:31.709 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-20:59:31.710 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-20:59:31.710 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@537001ca, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d030de3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@46236fd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b564b0d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78fb61fc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2d420715, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3802099e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@219533b0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@24242ff, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3f05970d]
-20:59:31.713 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.GreetingControllerTests]
-20:59:31.713 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.GreetingControllerTests]
-20:59:31.714 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.GreetingControllerTests]
-20:59:31.714 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.GreetingControllerTests]
-20:59:31.718 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@726d2387 testClass = GreetingControllerTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@b702653 testClass = GreetingControllerTests, locations = '{}', classes = '{class hello.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4825ccb6, [ImportsContextCustomizer@5687ed2c key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@25151a7b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6fc1b558, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@48a8b528], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
-20:59:31.719 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.GreetingControllerTests]
-20:59:31.719 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.GreetingControllerTests]
-20:59:31.738 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+<pre>10:25:48.404 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class hello.GreetingControllerTests]
+10:25:48.410 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+10:25:48.419 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+10:25:48.443 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [hello.GreetingControllerTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+10:25:48.455 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.GreetingControllerTests], using SpringBootContextLoader
+10:25:48.459 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.GreetingControllerTests]: class path resource [hello/GreetingControllerTests-context.xml] does not exist
+10:25:48.459 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.GreetingControllerTests]: class path resource [hello/GreetingControllerTestsContext.groovy] does not exist
+10:25:48.459 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [hello.GreetingControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+10:25:48.460 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [hello.GreetingControllerTests]: GreetingControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:25:48.511 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [hello.GreetingControllerTests]
+10:25:48.578 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\workspace\mcapp\build\classes\java\main\hello\Application.class]
+10:25:48.586 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration hello.Application for test class hello.GreetingControllerTests
+10:25:48.694 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [hello.GreetingControllerTests]: using defaults.
+10:25:48.695 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:25:48.710 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+10:25:48.711 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+10:25:48.711 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@18f61d6f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@429f4735, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c7bd3c6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@660d0bd5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4eb87f1e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@76262f13, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@249137f2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2accd316, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@278109de, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6018f48a]
+10:25:48.714 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.GreetingControllerTests]
+10:25:48.714 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.GreetingControllerTests]
+10:25:48.715 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.GreetingControllerTests]
+10:25:48.715 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.GreetingControllerTests]
+10:25:48.719 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4cf890fc testClass = GreetingControllerTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@677666e0 testClass = GreetingControllerTests, locations = '{}', classes = '{class hello.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3ee8a024, [ImportsContextCustomizer@258f2fab key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30280dfa, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7477011e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@59852059], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+10:25:48.720 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.GreetingControllerTests]
+10:25:48.720 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.GreetingControllerTests]
+10:25:48.742 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -126,13 +126,13 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.6.RELEASE)
 
-2019-11-17 20:59:31.987  INFO 18456 --- [    Test worker] hello.GreetingControllerTests            : Starting GreetingControllerTests on FINGERM19 with PID 18456 (started by mfinger in C:\workspace\mcapp)
-2019-11-17 20:59:31.988  INFO 18456 --- [    Test worker] hello.GreetingControllerTests            : No active profile set, falling back to default profiles: default
-2019-11-17 20:59:33.203  INFO 18456 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-17 20:59:33.477  INFO 18456 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2019-11-17 20:59:33.477  INFO 18456 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2019-11-17 20:59:33.487  INFO 18456 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 10 ms
-2019-11-17 20:59:33.509  INFO 18456 --- [    Test worker] hello.GreetingControllerTests            : Started GreetingControllerTests in 1.761 seconds (JVM running for 5.197)
+2019-11-21 10:25:49.015  INFO 15316 --- [    Test worker] hello.GreetingControllerTests            : Starting GreetingControllerTests on FINGERM19 with PID 15316 (started by mfinger in C:\workspace\mcapp)
+2019-11-21 10:25:49.016  INFO 15316 --- [    Test worker] hello.GreetingControllerTests            : No active profile set, falling back to default profiles: default
+2019-11-21 10:25:50.415  INFO 15316 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:25:50.742  INFO 15316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-11-21 10:25:50.743  INFO 15316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-11-21 10:25:50.756  INFO 15316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
+2019-11-21 10:25:50.779  INFO 15316 --- [    Test worker] hello.GreetingControllerTests            : Started GreetingControllerTests in 2.026 seconds (JVM running for 6.056)
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -164,12 +164,12 @@ FlashMap:
 MockHttpServletResponse:
            Status = 200
     Error message = null
-          Headers = [X-OneAgent-JS-Injection:&quot;true&quot;, Set-Cookie:&quot;dtCookie=v_4_srv_3_sn_2FC826385287E0B370D4B5CB3386BA44_perc_100000_ol_0_mul_1; Path=/&quot;, Content-Type:&quot;application/json;charset=UTF-8&quot;]
+          Headers = [X-OneAgent-JS-Injection:&quot;true&quot;, Set-Cookie:&quot;dtCookie=v_4_srv_3_sn_B40C03A93E012AAE7DA7E8116A1D630C_perc_100000_ol_0_mul_1; Path=/&quot;, Content-Type:&quot;application/json;charset=UTF-8&quot;]
      Content type = application/json;charset=UTF-8
              Body = {&quot;id&quot;:1,&quot;content&quot;:&quot;Hello, World!&quot;}
     Forwarded URL = null
    Redirected URL = null
-          Cookies = [[MockCookie@e0abcdc name = 'dtCookie', value = 'v_4_srv_3_sn_2FC826385287E0B370D4B5CB3386BA44_perc_100000_ol_0_mul_1', comment = [null], domain = [null], maxAge = -1, path = '/', secure = false, version = 0, httpOnly = false]]
+          Cookies = [[MockCookie@584f8fbf name = 'dtCookie', value = 'v_4_srv_3_sn_B40C03A93E012AAE7DA7E8116A1D630C_perc_100000_ol_0_mul_1', comment = [null], domain = [null], maxAge = -1, path = '/', secure = false, version = 0, httpOnly = false]]
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -201,12 +201,12 @@ FlashMap:
 MockHttpServletResponse:
            Status = 200
     Error message = null
-          Headers = [X-OneAgent-JS-Injection:&quot;true&quot;, Set-Cookie:&quot;dtCookie=v_4_srv_2_sn_AB2E22399899529E8506A188E49E6837_perc_100000_ol_0_mul_1; Path=/&quot;, Content-Type:&quot;application/json;charset=UTF-8&quot;]
+          Headers = [X-OneAgent-JS-Injection:&quot;true&quot;, Set-Cookie:&quot;dtCookie=v_4_srv_3_sn_FFC0AD089D5D1F459655FCA7C643CBD8_perc_100000_ol_0_mul_1; Path=/&quot;, Content-Type:&quot;application/json;charset=UTF-8&quot;]
      Content type = application/json;charset=UTF-8
              Body = {&quot;id&quot;:2,&quot;content&quot;:&quot;Hello, Spring Community!&quot;}
     Forwarded URL = null
    Redirected URL = null
-          Cookies = [[MockCookie@398844cb name = 'dtCookie', value = 'v_4_srv_2_sn_AB2E22399899529E8506A188E49E6837_perc_100000_ol_0_mul_1', comment = [null], domain = [null], maxAge = -1, path = '/', secure = false, version = 0, httpOnly = false]]
+          Cookies = [[MockCookie@6e8ca55e name = 'dtCookie', value = 'v_4_srv_3_sn_FFC0AD089D5D1F459655FCA7C643CBD8_perc_100000_ol_0_mul_1', comment = [null], domain = [null], maxAge = -1, path = '/', secure = false, version = 0, httpOnly = false]]
 </pre>
 </span>
 </div>
@@ -218,7 +218,7 @@ MockHttpServletResponse:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Nov 17, 2019 8:59:34 PM</p>
+<a href="http://www.gradle.org">Gradle 4.7</a> at Nov 21, 2019 10:25:51 AM</p>
 </div>
 </div>
 </body>

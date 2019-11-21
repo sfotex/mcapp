@@ -17,13 +17,10 @@ jobs:
   plan:
   - get: spring-boot-concourse
     trigger: true
-  - task: Build project
-    file: spring-boot-concourse/concourse/tasks/build.yml
-- name: publish
-  public: true
-  serial: true
-  plan:
-  - get: spring-boot-concourse
+  - task: Run tests project
+    file: spring-boot-concourse/concourse/tasks/test.yml
+  - task: Deploy artifact
+    file: spring-boot-concourse/concourse/tasks/deploy.yml
   - put: my-docker-image
     params:
-      build: spring-boot-concourse
+      build: ./spring-boot-concourse/
