@@ -11,4 +11,4 @@ inputs:
 
 
 run:
-  path: "spring-boot-concourse/concourse/tasks/test.sh"
+  path: "spring-boot-concourse/concourse/tasks/deploy.sh"
