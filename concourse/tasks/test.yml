@@ -12,7 +12,7 @@ outputs:
 
 
 caches:
-  - path: .gradle/
+  - path: gradle
 
 run:
   path: sh
