@@ -10,6 +10,10 @@ inputs:
 outputs:
   - name: build-output
 
+
+caches:
+  - path: .gradle/
+
 run:
   path: sh
   args: [spring-boot-concourse/concourse/tasks/test.sh]
