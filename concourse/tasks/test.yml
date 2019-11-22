@@ -10,9 +10,9 @@ inputs:
 outputs:
   - name: build-output
 
-
 caches:
   - path: gradle
+  - path: maven
 
 run:
   path: sh

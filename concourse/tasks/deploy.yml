@@ -1,7 +1,6 @@
 ---
 platform: linux
 
-
 image_resource:
   type: docker-image
   source: {repository: java, tag: openjdk-8-alpine}
@@ -9,9 +8,9 @@ image_resource:
 inputs:
   - name: spring-boot-concourse
 
-
 caches:
-  - path: gradle 
+  - path: gradle
+  - path: maven
 
 run:
   path: "spring-boot-concourse/concourse/tasks/deploy.sh"
