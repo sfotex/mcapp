@@ -4,7 +4,8 @@ resources:
     check_every: 10s
     source:
       uri: https://github.com/sfotex/mcapp.git
-      branch: master   
+      branch: master  
+  
   
 jobs:
 - name: build

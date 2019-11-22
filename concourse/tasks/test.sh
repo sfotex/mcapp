@@ -15,3 +15,5 @@ echo "Generating symbolic links for caches"
 
 
 spring-boot-concourse/gradlew --build-file spring-boot-concourse/build.gradle clean test
+cp spring-boot-concourse/build/libs/*.jar build-output/
+cp spring-boot-concourse/Dockerfile build-output/
