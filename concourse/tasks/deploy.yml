@@ -13,4 +13,5 @@ caches:
   - path: maven
 
 run:
-  path: "spring-boot-concourse/concourse/tasks/deploy.sh"
+  path: sh
+  args: [spring-boot-concourse/concourse/tasks/deploy.sh]
