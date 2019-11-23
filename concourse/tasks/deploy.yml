@@ -14,4 +14,4 @@ inputs:
 
 run:
   path: sh
-  args: [spring-boot-concourse/concourse/tasks/deploy.sh]
+  args: [buildah bud -t build-output/Dockerbuild .]
