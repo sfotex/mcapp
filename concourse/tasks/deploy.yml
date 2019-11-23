@@ -11,7 +11,8 @@ image_resource:
     
 inputs:
   - name: build-output
+  - name: spring-boot-concourse
 
 run:
   path: sh
-  args: [buildah bud -t build-output/Dockerbuild .]
+  args: [spring-boot-concourse/concourse/tasks/deploy.sh]

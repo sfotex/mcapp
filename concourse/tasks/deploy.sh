@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-buildah bud -t build-output/Dockerbuild . doc
+buildah bud -t build-output/Dockerbuild . 
