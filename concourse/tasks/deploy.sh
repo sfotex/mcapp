@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-buildah info
+podman -v
