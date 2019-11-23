@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-podman -v
+podman build --tag mfer/spring -f spring-boot-concourse/Dockerfile
