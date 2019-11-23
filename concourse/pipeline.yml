@@ -16,4 +16,5 @@ jobs:
   - task: Build project
     file: spring-boot-concourse/concourse/tasks/test.yml
   - task: Deploy artifact
+    privileged: true
     file: spring-boot-concourse/concourse/tasks/deploy.yml
