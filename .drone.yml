@@ -3,6 +3,6 @@ name: default
 
 steps:
   - name: test
-    image: gradle:jdk10
+    image: gradle:jdk8
     commands:
       - ./gradlew clean build
