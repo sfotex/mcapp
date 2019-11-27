@@ -5,7 +5,7 @@ kind: pipeline
 name: default
 
 steps:
-- name: test2
+- name: test3
   image: gradle:jdk10
   commands:
   - gradlew clean build
