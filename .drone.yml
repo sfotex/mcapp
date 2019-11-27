@@ -5,4 +5,4 @@ steps:
   - name: test
     image: gradle:jdk10
     commands:
-      - gradle clean build
+      - ./gradlew clean build
