@@ -6,3 +6,10 @@ steps:
     image: gradle:jdk8
     commands:
       - ./gradlew clean build
+  - name: publish
+    image: plugins/ecr
+    settings:
+      access_key: AKIATSY7DKLT4L42TL73
+      secret_key: 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
+      repo: drone
+      registry: 246488978151.dkr.ecr.us-east-1.amazonaws.com
