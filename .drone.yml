@@ -16,6 +16,7 @@ steps:
       repo: drone
       registry: 246488978151.dkr.ecr.us-east-1.amazonaws.com
 
+
 kind: secret
 name: ac_key
 data: Z3bnDZ1WAozShybUJRoGZesNdFP+NgN+vGBN4ujvx5YDXiA8WesfI4LeVYc93em9
