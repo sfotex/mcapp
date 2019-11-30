@@ -8,18 +8,15 @@ steps:
       - ./gradlew clean build
   - name: publish
     image: plugins/ecr
-    settings:
-      access_key:
+    environment:
+      repo: sfotex/mcapp
+      ac_key:
         from_secret: ac_key
-      secret_key:
+      sec_key:
         from_secret: sec_key
+    settings:
+      access_key: ac_key
+      secret_key: sec_key
       repo: drone
       registry: 246488978151.dkr.ecr.us-east-1.amazonaws.com
-      
-kind: secret
-name: ac_key
-data: Z3bnDZ1WAozShybUJRoGZesNdFP+NgN+vGBN4ujvx5YDXiA8WesfI4LeVYc93em9
 
-kind: secret
-name: sec_key
-data: /GsH8OWVGtBGoSJ388UduFpiGqxgGMdU916bi6XUZ+cZmvZvKnsA4hDYCNma45e0WM1e8ca8AuLZ1SlDDkoYlAK2fGk=
