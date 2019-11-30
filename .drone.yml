@@ -9,7 +9,17 @@ steps:
   - name: publish
     image: plugins/ecr
     settings:
-      access_key: AKIATSY7DKLT4L42TL73
-      secret_key: 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
+      access_key:
+        from_secret: ac_key
+      secret_key:
+        from_secret: sec_key
       repo: drone
       registry: 246488978151.dkr.ecr.us-east-1.amazonaws.com
+
+kind: secret
+name: ac_key
+data: Z3bnDZ1WAozShybUJRoGZesNdFP+NgN+vGBN4ujvx5YDXiA8WesfI4LeVYc93em9
+
+kind: secret
+name: sec_key
+data: /GsH8OWVGtBGoSJ388UduFpiGqxgGMdU916bi6XUZ+cZmvZvKnsA4hDYCNma45e0WM1e8ca8AuLZ1SlDDkoYlAK2fGk=
