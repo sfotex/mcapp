@@ -6,6 +6,10 @@ steps:
     image: gradle:jdk8
     commands:
       - ./gradlew clean build
+  - name: test
+      image: gradle:jdk8
+      commands:
+        - ./gradlew test
   - name: publish
     image: plugins/ecr
     environment:
