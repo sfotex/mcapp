@@ -10,11 +10,11 @@ steps:
     image: plugins/ecr
     environment:
       repo: sfotex/mcapp
+    settings:
       access_key:
         from_secret: ac_key
       secret_key:
         from_secret: sec_key
-    settings:
       repo: drone
       registry: 246488978151.dkr.ecr.us-east-1.amazonaws.com
 
