@@ -12,9 +12,8 @@ steps:
       - ./gradlew test
   - name: docker
     image: plugins/docker
+    tags: [ latest ]
     settings:
-      tags:
-        - latest
       repo:
         from_secret: repo
       access_key:
