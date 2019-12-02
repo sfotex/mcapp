@@ -12,11 +12,11 @@ steps:
       - ./gradlew test
   - name: docker
     image: plugins/docker
-    tags: [ latest ]
+    tags: 1.0
     settings:
       repo:
         from_secret: repo
-      access_key:
+      registry:
         from_secret: registry
   - name: publish
     image: plugins/ecr
