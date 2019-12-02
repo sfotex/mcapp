@@ -12,7 +12,7 @@ steps:
       - ./gradlew test
   - name: docker
     image: plugins/docker
-    tags: 1.0
+    tags: 1.1
     settings:
       repo:
         from_secret: repo
