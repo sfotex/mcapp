@@ -13,6 +13,9 @@ steps:
   - name: docker
     image: plugins/docker
     settings:
+      tags:
+        - latest
+      repo: mfinger
       registry: localhost
   - name: publish
     image: plugins/ecr
