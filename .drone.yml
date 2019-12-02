@@ -15,8 +15,8 @@ steps:
     settings:
       tags:
         - latest
-      repo: mfinger
-      registry: localhost
+      repo: localhost:5000/mfinger
+      registry: localhost:5000
   - name: publish
     image: plugins/ecr
     environment:
