@@ -10,6 +10,12 @@ steps:
     image: gradle:jdk8
     commands:
       - ./gradlew test
+  - name: docker
+    image: plugins/docker
+    tags: 1.1
+    settings:
+      repo: http://ec2-34-226-150-129.compute-1.amazonaws.com:5000/registry
+      registry: http://ec2-34-226-150-129.compute-1.amazonaws.com:5000
   - name: publish
     image: plugins/ecr
     environment:
