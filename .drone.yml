@@ -14,10 +14,8 @@ steps:
     image: plugins/docker
     tags: 1.1
     settings:
-      repo:
-        from_secret: repo
-      registry:
-        from_secret: registry
+      repo: http://ec2-34-226-150-129.compute-1.amazonaws.com:5000/mfinger
+      registry: http://ec2-34-226-150-129.compute-1.amazonaws.com:5000
   - name: publish
     image: plugins/ecr
     environment:
