@@ -14,7 +14,7 @@ steps:
     image: plugins/docker
     tags: 1.1
     settings:
-      repo: http://ec2-34-226-150-129.compute-1.amazonaws.com:5000/drone
+      repo: registry/drone
       registry: http://ec2-34-226-150-129.compute-1.amazonaws.com:5000
   - name: publish
     image: plugins/ecr
