@@ -14,7 +14,7 @@ steps:
     image: plugins/docker
     settings:
       auto_tag: true
-      repo: mfinger/drone
+      repo: mfinger/drone:mcapp
   - name: publish
     image: plugins/ecr
     environment:
