@@ -12,6 +12,7 @@ steps:
       - ./gradlew test
   - name: docker
     image: plugins/docker
+    depends_on: [ test ]
     settings:
       tags: latest
       repo: mfinger/drone
@@ -20,6 +21,7 @@ steps:
         from_secret: docker_pw
   - name: publish
     image: plugins/ecr
+    depends_on: [ test ]
     environment:
       repo: sfotex/mcapp
     settings:
