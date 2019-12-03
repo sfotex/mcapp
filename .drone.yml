@@ -15,7 +15,7 @@ steps:
     tags: 1.1
     settings:
       repo: http://172.31.86.118:5000:5000/registry/drone
-      registry: http://172.31.86.118:5000:5000
+      registry: http://172.31.86.118:5000
   - name: publish
     image: plugins/ecr
     environment:
