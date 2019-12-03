@@ -13,8 +13,8 @@ steps:
   - name: docker
     image: plugins/docker
     settings:
-      repo: mfinger/drone
       tags: latest
+      repo: mfinger/drone
   - name: publish
     image: plugins/ecr
     environment:
