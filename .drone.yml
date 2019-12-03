@@ -14,8 +14,7 @@ steps:
     image: plugins/docker
     settings:
       auto_tag: true
-      repo: http://localhost/registry/drone
-      registry: http://localhost
+      repo: mfinger/drone
   - name: publish
     image: plugins/ecr
     environment:
