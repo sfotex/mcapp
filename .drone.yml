@@ -14,8 +14,8 @@ steps:
     image: plugins/docker
     settings:
       auto_tag: true
-      repo: http://172.31.86.118:5000/localhost:5000/drone
-      registry: http://172.31.86.118:5000
+      repo: http://localhost:5000/localhost:5000/drone
+      registry: http://localhost:5000
   - name: publish
     image: plugins/ecr
     environment:
