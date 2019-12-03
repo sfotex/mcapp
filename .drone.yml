@@ -12,9 +12,9 @@ steps:
       - ./gradlew test
   - name: docker
     image: plugins/docker
-    tags: 1.1
     settings:
-      repo: http://172.31.86.118:5000:5000/registry/drone
+      auto_tag: true
+      repo: http://172.31.86.118:5000:5000/v2/registry
       registry: http://172.31.86.118:5000
   - name: publish
     image: plugins/ecr
