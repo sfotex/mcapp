@@ -15,6 +15,9 @@ steps:
     settings:
       tags: latest
       repo: mfinger/drone
+      username: mfinger
+      password:
+        from_secret: docker_pw
   - name: publish
     image: plugins/ecr
     environment:
