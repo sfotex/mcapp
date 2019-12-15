@@ -20,8 +20,6 @@ steps:
         from_secret: docker_pw
   - name: publish
     image: plugins/ecr
-    environment:
-      repo: sfotex/mcapp
     settings:
       access_key:
         from_secret: access_key
