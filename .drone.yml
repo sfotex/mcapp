@@ -21,6 +21,7 @@ steps:
   - name: publish
     image: plugins/ecr
     settings:
+      auto_tag: true
       access_key:
         from_secret: access_key
       secret_key:
