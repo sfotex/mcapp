@@ -18,7 +18,6 @@ steps:
       username: mfinger
       password:
         from_secret: docker_pw
-        
   - name: publish
     image: plugins/ecr
     settings:
