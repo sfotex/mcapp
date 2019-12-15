@@ -27,5 +27,4 @@ steps:
         from_secret: secret_key
       repo: drone
       registry: 246488978151.dkr.ecr.us-east-1.amazonaws.com
-      tags:
-        - 1.0.2
+      auto_tag: true
