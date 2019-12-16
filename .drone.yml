@@ -28,5 +28,5 @@ steps:
       repo: drone
       registry: 246488978151.dkr.ecr.us-east-1.amazonaws.com
       tags:
-         ${DRONE_COMMIT_SHA:0:7}
+         ${DRONE_COMMIT_SHA:0:8}
 
